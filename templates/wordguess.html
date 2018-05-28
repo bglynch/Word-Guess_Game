@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <title>Document</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>GAME PAGE</h1>
+    <div class="row" id="alphabet_area">
+        <div class="width26">A</div>
+        <div class="width26">B</div>
+        <div class="width26">C</div>
+        <div class="width26">D</div>
+        <div class="width26">E</div>
+        <div class="width26">F</div>
+        <div class="width26">G</div>
+        <div class="width26 incorrect_letter">H</div>
+        <div class="width26">I</div>
+        <div class="width26">J</div>
+        <div class="width26">K</div>
+        <div class="width26 correct_letter">L</div>
+        <div class="width26">M</div>
+        <div class="width26 incorrect_letter">N</div>
+        <div class="width26 correct_letter">O</div>
+        <div class="width26">P</div>
+        <div class="width26">Q</div>
+        <div class="width26">R</div>
+        <div class="width26">S</div>
+        <div class="width26">T</div>
+        <div class="width26">U</div>
+        <div class="width26 incorrect_letter">V</div>
+        <div class="width26">W</div>
+        <div class="width26">X</div>
+        <div class="width26 incorrect_letter">Y</div>
+        <div class="width26">Z</div>
+    </div>
+    <div class="row" id="game_area"></div>
 
-    
+    <div class="row" id="guess_area">
     <form action = '/{{the_username}}/letter_guess' method="POST">
-        <input type="text" name="letter" placeholder="Pick A Letter"/>
-        <input type="submit" value="Submit"/>
+        <input type="text" class="col-sm-2 col-sm-offset-5 row" name="letter" placeholder="Pick A Letter"/>
+        <input type="submit" class="col-sm-2 col-sm-offset-5" value="Submit"/>
     </form>
+    </div>
     
 
     

@@ -1,0 +1,51 @@
+.width26 {
+    width: calc(100% / 26);
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 35px;
+    font-family: monospace;
+    background: dimgrey;
+}
+
+#alphabet {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.correct_letter{
+    color: #19a71e;
+    background-color: white;
+    font-weight: 600;
+}
+
+.incorrect_letter{
+    color: #d41919;
+    background-color: white;
+    font-weight: 600;
+}
+
+#alphabet_area {
+    margin-left: 0;
+    margin-right: 0;
+    background: #989898;
+}
+
+#game_area {
+    margin-left: 0;
+    margin-right: 0;
+    height: 500px;
+    background: antiquewhite;
+}
+
+#guess_area {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+input.col-sm-2.col-sm-offset-5.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
