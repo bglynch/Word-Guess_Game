@@ -31,7 +31,7 @@ def user_game_page(username):
 # ----------------------------------------------------- GUESSING LETTER
 @app.route("/<username>/letter_guess")
 def add_letter():
-    hg
+    return 'Hello'
     
 
 

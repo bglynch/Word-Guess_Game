@@ -12,23 +12,25 @@ ALL_WORDS = read_words_file('proverbs.txt')
 
 
 list_of_letters = [letter for letter in ascii_uppercase]
-word = choice(ALL_WORDS)
-word = word.upper()
+word = choice(ALL_WORDS).upper()
 blank_word = []
 print(word)
 
-guessed_letters=['I','A','V']
+guessed_letters=['I','A','V','S']
+incorrect_guesses_allowed = 5
 
-
-for i in word:
-    if i in guessed_letters:
-        blank_word.append(i)
-    if i in list_of_letters:
+for letter in word:
+    if letter in guessed_letters:
+        blank_word.append(letter)
+    elif letter in list_of_letters:
         blank_word.append("_")
     else:
-        blank_word.append(i)
+        blank_word.append(letter)
 blank_word = "".join(blank_word)
 print(blank_word)
+
+
+
 
 
 
